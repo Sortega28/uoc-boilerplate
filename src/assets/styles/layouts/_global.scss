@@ -1,0 +1,23 @@
+@use '../variables';
+
+// Reset básico
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $fuente-secundaria;
+  background-color: $color-fondo;
+  color: $color-texto;
+  max-width: $ancho-maximo;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-family: $fuente-principal;
+  color: $color-primario;
+}

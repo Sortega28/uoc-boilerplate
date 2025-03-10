@@ -1,0 +1,227 @@
+@charset "UTF-8";
+/**
+ * Use this file to import partials.
+ * Do not include SCSS code in this file.
+ */
+/**
+ * Import variables
+ */
+/**
+ * Import layouts
+ * It's a best practice to use a different partial for each page
+ */
+/**
+ * Import npm dependencies
+ * see: https://v2.parceljs.org/features/module-resolution/
+ * see commented examples below
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f9f5f0;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  font-family: "Merriweather", serif;
+  color: #8b5e3b;
+}
+
+header {
+  background: #8b5e3b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  color: white;
+}
+header nav {
+  margin-top: 10px;
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+header nav a:hover {
+  color: #e1c699;
+}
+
+main {
+  padding: 20px;
+}
+main #introduccion {
+  text-align: center;
+}
+main #introduccion img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+main #introduccion p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+main #historia,
+main #receta {
+  padding: 20px;
+  margin-top: 40px;
+}
+main #historia h2,
+main #receta h2 {
+  font-size: 2rem;
+  color: #8b5e3b;
+  border-bottom: 2px solid #8b5e3b;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+main #historia p,
+main #receta p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+}
+main #historia ul,
+main #receta ul {
+  list-style-type: square;
+  padding-left: 20px;
+  font-size: 1rem;
+  color: #333;
+}
+main #historia li,
+main #receta li {
+  margin-bottom: 10px;
+}
+main #receta h3 {
+  font-size: 1.5rem;
+  color: #8b5e3b;
+  margin-top: 20px;
+}
+main #historia img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+main #receta .ingredientes,
+main #receta .preparacion {
+  background-color: #e1c699;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+main #receta .ingredientes h3,
+main #receta .preparacion h3 {
+  font-size: 1.5rem;
+  color: #8b5e3b;
+}
+main #receta .ingredientes ul,
+main #receta .preparacion ol {
+  padding-left: 20px;
+  font-size: 1rem;
+  color: #333;
+}
+main #receta .ingredientes li,
+main #receta .preparacion li {
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  main #historia,
+  main #receta {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Estilos para el pie de página */
+.footer {
+  background: #8b5e3b;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+/* Contenedor del footer */
+.footer__container {
+  display: flex;
+  flex-direction: column; /* En móvil será vertical */
+  align-items: center;
+  text-align: center;
+  gap: 15px; /* Espaciado entre elementos */
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Red de enlaces sociales */
+.footer__redes {
+  display: flex;
+  flex-direction: column; /* En móvil será vertical */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  list-style: none;
+}
+
+/* Lista de enlaces de políticas */
+.footer__list {
+  display: flex;
+  flex-direction: column; /* En móvil será vertical */
+  justify-content: center;
+  align-items: center;
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0;
+  gap: 10px;
+  width: 100%;
+}
+
+/* Media query para pantallas más grandes */
+@media (min-width: 768px) {
+  .footer__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    max-width: 100%;
+  }
+
+  .footer__redes, .footer__list {
+    flex-direction: row; /* En pantallas grandes será horizontal */
+  }
+  
+  .footer__redes {
+    grid-row: 1;
+  }
+
+  .footer__list {
+    grid-row: 2;
+  }
+}
+
+/* Media query para pantallas muy grandes */
+@media (min-width: 1024px) {
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/**
+ * Do NOT include anything else in this file!
+ */

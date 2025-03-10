@@ -1,0 +1,28 @@
+@use '../variables';
+
+header {
+  background: $color-primario;
+  color: white;
+  padding: 20px;
+  text-align: center;
+
+  h1{
+    color:white;
+  }
+
+  nav {
+    margin-top: 10px;
+
+    a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $color-secundario;
+      }
+    }
+  }
+}

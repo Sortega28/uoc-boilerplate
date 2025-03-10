@@ -1,0 +1,72 @@
+@use '../variables';
+
+/* Estilos para el pie de página */
+.footer {
+  background: $color-primario;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+/* Contenedor del footer */
+.footer__container {
+  display: flex;
+  flex-direction: column; /* Vertical en móvil */
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Red de enlaces sociales */
+.footer__redes {
+  display: flex;
+  flex-direction: column; /* Vertical en móvil */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+/* Lista de enlaces de políticas */
+.footer__list {
+  display: flex;
+  flex-direction: column; /* Vertical en móvil */
+  justify-content: center;
+  align-items: center;
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 10px;
+  gap: 10px;
+  width: 100%;
+}
+
+/* Media query para pantallas más grandes */
+@media (min-width: 768px) {
+  .footer__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+  }
+
+  .footer__redes, .footer__list {
+    flex-direction: row; /* En pantallas grandes será horizontal */
+  }
+
+  .footer__redes {
+    grid-row: 1;
+  }
+
+  .footer__list {
+    grid-row: 2;
+  }
+}
+
+/* Media query para pantallas muy grandes */
+@media (min-width: 1024px) {
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
+}

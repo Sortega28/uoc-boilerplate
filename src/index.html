@@ -1,27 +1,113 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.css"><!-- do not remove this line! -->
+    <title>Ternasco de Aragón - Tradición y sabor</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title"><i class="fas fa-university"></i>Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+    <header>
+        <a href="#inicio"><img src="assets/images/logo-aragon.png" alt="Logo de Ternasco de Aragón" width="150" height="150"></a>
+        <nav>
+            <a href="#historia">Historia</a>
+            <a href="#receta">Receta</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduccion">
+            <img src="assets/images/ternasco.webp" alt="Plato de Ternasco de Aragón">
+            <p>El Ternasco de Aragón es un plato tradicional con siglos de historia...</p>
+        </section>
+        <section id="historia">
+          <h2>Historia y Tradición del Ternasco de Aragón</h2>
+          <p>El <strong>Ternasco de Aragón</strong> es uno de los platos más representativos de la gastronomía aragonesa, especialmente conocido por su carne tierna, jugosa y de excelente calidad. La tradición del ternasco tiene raíces profundas en la cultura agrícola y ganadera de Aragón, especialmente en sus zonas rurales, donde la cría de ovejas es una actividad fundamental.</p>
+        
+          <h3>Orígenes y Tradición Ganadera</h3>
+          <p>La historia del ternasco está estrechamente vinculada a la cría de las razas autóctonas de ovejas de Aragón, como la raza <em>Rasa Aragonesa</em>, que ha sido cuidada y preservada durante siglos por los pastores de la región. La cría de corderos en Aragón se remonta a tiempos medievales, y con el paso de los años, la crianza de este ganado se ha ido perfeccionando para producir un cordero joven de alta calidad, ideal para su consumo.</p>
+        
+          <p>El término "ternasco" hace referencia a un cordero joven, de menos de 90 días de edad, que ha sido alimentado principalmente con la leche materna, lo que le otorga una carne más tierna y un sabor suave que lo distingue de otros tipos de cordero. En Aragón, el ternasco se cría en las tierras altas, con un clima y pastos especiales que mejoran sus características.</p>
+        
+          <h3>La Denominación de Origen</h3>
+          <p>La denominación de origen del Ternasco de Aragón fue otorgada en 1989, lo que ayudó a consolidar la identidad de este producto como un referente dentro de la gastronomía nacional e internacional. Esta denominación asegura que el Ternasco de Aragón se críe, sacrifique y comercialice siguiendo unos estrictos controles de calidad en la región de Aragón, lo que garantiza la excelencia de su carne.</p>
+        
+          <p>La carne de ternasco es una de las más valoradas en la cocina de Aragón, siendo utilizada en una gran variedad de platos, desde guisos hasta asados a la parrilla. Los platos más tradicionales incluyen el ternasco asado al horno, que es uno de los favoritos de los aragoneses en celebraciones y festividades locales.</p>
+        
+          <h3>Gastronomía y Platos Tradicionales</h3>
+          <p>La forma más tradicional de preparar el ternasco en Aragón es el <strong>ternasco asado</strong> al horno, donde se adereza con ajo, romero, aceite de oliva y sal, y se cocina a fuego lento hasta que la carne se vuelve extremadamente tierna. Este plato es común en celebraciones, bodas, y festividades como las fiestas patronales. Además, se sirve en muchos restaurantes típicos y es la estrella de las <em>"cenas de ternasco"</em> organizadas en la región.</p>
+        
+          <p>El <strong>ternasco guisado</strong>, en estofado o con salsa, también es un plato muy popular que resalta el sabor de la carne acompañada de verduras, legumbres y especias. Otros platos populares que utilizan ternasco incluyen el <strong>ternasco a la brasa</strong> o en brochetas, una opción que resalta el sabor ahumado de la carne.</p>
+        
+          <h3>Importancia Cultural y Económica</h3>
+          <p>El Ternasco de Aragón no solo es un emblema de la gastronomía de la región, sino también un motor económico importante. La cría y comercialización del ternasco crea empleo y representa una fuente importante de ingresos para las zonas rurales de Aragón, donde se lleva a cabo la mayoría de la producción.</p>
+        
+          <p>Además, el ternasco tiene un papel cultural muy relevante en las festividades aragonesas, donde el plato se disfruta en reuniones familiares, eventos especiales y fiestas locales. Es habitual que en las celebraciones de la región se organice una comida en la que el ternasco ocupa un lugar destacado, lo que resalta la conexión entre la comida y las tradiciones sociales de la comunidad.</p>
+        
+          <h3>Conclusión</h3>
+          <p>El Ternasco de Aragón es mucho más que un plato típico: es un símbolo de la tradición ganadera y culinaria de Aragón, reconocido por su calidad y sabor único. Con una historia que se remonta a siglos de cultura ganadera, sigue siendo un pilar fundamental de la gastronomía de la región, y una pieza clave para mantener vivas las tradiciones culinarias y el desarrollo económico de las áreas rurales aragonesas.</p>
+        </section>
+        <section id="receta">
+          <h2>Ingredientes y Preparación</h2>
+          <h3>Ingredientes</h3>
+          <ul>
+            <li>1 pierna de Ternasco de Aragón (o cordero joven)</li>
+            <li>4 dientes de ajo</li>
+            <li>2 ramas de romero fresco</li>
+            <li>Sal y pimienta al gusto</li>
+            <li>Aceite de oliva virgen extra</li>
+            <li>1 vaso de vino blanco</li>
+            <li>1 cebolla</li>
+            <li>1 zanahoria</li>
+            <li>1 ramita de tomillo (opcional)</li>
+          </ul>
+          <h3>Preparación</h3>
+          <p>Elaborar el <strong>Ternasco de Aragón</strong> al estilo tradicional es una experiencia culinaria sencilla pero muy sabrosa. Aquí tienes los pasos para preparar el plato de manera tradicional:</p>
+          <ol>
+            <li><strong>Preparación de la carne:</strong> Precalienta el horno a 180°C (350°F). Coloca la pierna de ternasco en una bandeja de horno. Salpimienta generosamente por todos lados.</li>
+        
+            <li><strong>Marinado:</strong> Pela los ajos y aplástalos con el dorso de un cuchillo. Colócalos en la bandeja junto con las ramas de romero y tomillo (si usas). Rocíalo todo con aceite de oliva virgen extra.</li>
+        
+            <li><strong>Horneado:</strong> Introduce la bandeja en el horno precalentado. Asa el ternasco durante aproximadamente 1 hora y 30 minutos o hasta que la carne esté dorada por fuera y tierna por dentro. Durante el proceso, puedes ir rociando la carne con su propio jugo o añadir un poco de vino blanco para mantener la humedad.</li>
+        
+            <li><strong>Preparación de las verduras:</strong> Mientras se asa la carne, pela y corta la cebolla y la zanahoria en rodajas. A los 45 minutos de asado, agrega las verduras a la bandeja con el ternasco.</li>
+        
+            <li><strong>Finalización:</strong> Cuando el ternasco esté bien dorado y tierno, retíralo del horno. Deja reposar durante unos minutos antes de cortarlo para que los jugos se redistribuyan y no se pierdan al cortar.</li>
+        
+            <li><strong>Servir:</strong> Corta el ternasco en trozos y acompáñalo con las verduras asadas y una guarnición de patatas o ensalada, según prefieras.</li>
+          </ol>
+          <h3>Consejos</h3>
+          <ul>
+            <li>Si prefieres un sabor más intenso, puedes marinar la carne durante unas horas antes de cocinarla, dejándola en la nevera con ajo, romero y aceite de oliva.</li>
+            <li>El Ternasco de Aragón es ideal para acompañar con un vino tinto de la región, como un Cariñena o Somontano.</li>
+            <li>Si te gusta un toque extra de sabor, puedes añadir un poco de vino tinto en lugar de blanco para darle un toque más robusto.</li>
+          </ul>
+        </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <ul class="footer__redes">
+          <li>
+            <a href=""><img src="assets/images/twitter.svg" alt="twitter" width="24" height="24"></a>
+          </li>
+          <li>
+            <a href=""><img src="assets/images/instagram.svg" alt="instagram" width="24" height="24"></a>
+          </li>
+          <li>
+            <a href=""><img src="assets/images/youtube.svg" alt="youtube" width="24" height="24"></a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li><a href="">Política de privacidad</a></li>
+          <li>|</li>
+          <li>
+            <a href="">Política de <span lang="en">cookies</span></a>
+          </li>
+          <li>|</li>
+          <li><a href="">Aviso legal</a></li>
+        </ul>
+      </div>
+    </footer>
+</body>
 </html>

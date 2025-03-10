@@ -1,0 +1,93 @@
+@use '../variables';
+
+main {
+  padding: 20px;
+
+  #introduccion {
+    text-align: center;
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+  }
+
+  #historia, #receta {
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  #historia h2, #receta h2 {
+    font-size: 2rem;
+    color: $color-primario;
+    border-bottom: 2px solid $color-primario;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #historia p, #receta p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: $color-texto;
+    text-align: justify;
+  }
+  
+  #historia ul, #receta ul {
+    list-style-type: square;
+    padding-left: 20px;
+    font-size: 1rem;
+    color: $color-texto;
+  }
+  
+  #historia li, #receta li {
+    margin-bottom: 10px;
+  }
+  
+  #receta h3 {
+    font-size: 1.5rem;
+    color: $color-primario;
+    margin-top: 20px;
+  }
+  
+  #historia img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  #receta .ingredientes, #receta .preparacion {
+    background-color: $color-secundario;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+  }
+  
+  #receta .ingredientes h3, #receta .preparacion h3 {
+    font-size: 1.5rem;
+    color: $color-primario;
+  }
+  
+  #receta .ingredientes ul, #receta .preparacion ol {
+    padding-left: 20px;
+    font-size: 1rem;
+    color: $color-texto;
+  }
+  
+  #receta .ingredientes li, #receta .preparacion li {
+    margin-bottom: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    #historia, #receta {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+}

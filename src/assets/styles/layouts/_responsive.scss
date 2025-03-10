@@ -1,0 +1,50 @@
+@use '../variables';
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px; 
+  }
+
+  header {
+    nav {
+      display: flex;
+      flex-direction: column; 
+      align-items: center; 
+      
+      a {
+        margin-bottom: 10px; 
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  footer .container {
+    display: block; 
+    text-align: center; 
+  }
+
+  footer ul {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 0;
+  }
+
+  footer ul li {
+    margin-bottom: 10px; 
+  }
+
+  #introduccion {
+    img {
+      margin-top: 10px; 
+
+    p {
+      font-size: 1rem; 
+    }
+  }
+
+  #historia, #receta {
+    margin-top: 20px; 
+  }
+}
+}
