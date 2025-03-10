@@ -10,14 +10,14 @@
     "dev": "npm-run-all clean parcel:serve",
     "build": "npm-run-all clean parcel:build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "stylefmt": "stylefmt \"src/styles/**/*.css\"",
-    "format:css": "prettier --write \"src/**/*.css\""
+    "stylefmt": "stylefmt \"docs/styles/**/*.css\"",
+    "format:css": "prettier --write \"docs/**/*.css\""
   },
   "targets": {
     "web": {
       "context": "browser",
       "publicUrl": "./",
-      "source": "src/index.html",
+      "source": "docs/index.html",
       "engines": {
         "browsers": "last 2 versions, > 0.5%, not dead"
       }

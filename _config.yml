@@ -1,4 +1,0 @@
-source: src
-destination: _site
-url: "https://uoc-boilerplate-sortega28.netlify.app/" 
-theme: jekyll-theme-primer
